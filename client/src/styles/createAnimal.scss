@@ -1,0 +1,62 @@
+@import './global/variables.scss';
+
+
+
+.form-container{
+  @include flex-center();
+  min-height: 70vh;
+  margin-top: 50px;
+  color: white;
+
+  align-items: flex-start;
+
+  .form-border{
+    width: 90vw;
+    padding: 30px 0;
+    border: $border;
+    background-color: rgba(0,0,0,0.5);
+    @include flex-center();
+    flex-direction: column;
+    color: white;
+
+    h2{
+      margin-bottom: 30px;
+        color: white;
+    }
+    
+    form {
+      @include flex-center();
+      flex-direction: column;
+      height: 50%;
+      color: white;
+      
+      input, textarea{
+        @include inputs();
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+      }
+
+      input{
+        color:white;
+      }
+
+      button{
+        @include buttons();
+        background-color: rgb(64, 90, 18);
+        color: white;
+      }
+
+      .profile-picture{
+        height: 220px;
+        width: 220px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      
+    }
+    @media(min-width: 600px){
+      width: 50vw;
+    }
+  }
+}

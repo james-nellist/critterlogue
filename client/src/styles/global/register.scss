@@ -1,0 +1,45 @@
+@import './variables.scss';
+
+
+.register-form-container{
+  padding: 50px 0;
+
+}
+
+  .register-border{
+    width: 90vw;
+    padding: 30px 0;
+    // height: 70vh;
+    border: $border;
+    background-color: rgba(0,0,0,0.5);
+  @include flex-center();
+  flex-direction: column;
+
+  form {
+    @include flex-center();
+    flex-direction: column;
+    // height: 50%;
+    color: white;
+    
+    
+    input{
+      @include inputs();
+      background-color: rgba(0,0,0,0.5);
+      color: white;
+    }
+    
+    button{
+      @include buttons();
+      background-color: rgb(64, 90, 18);
+      color: white;
+    }
+    
+  }
+
+  @media(min-width: 600px){
+    width: 50vw;
+  }
+  @media(min-width: 1000px){
+    // width: 30vw;
+  }
+}

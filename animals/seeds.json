@@ -1,0 +1,47 @@
+[
+  {
+    "model": "animals.animal",
+    "pk": 1,
+    "fields": {
+      "name": "Cat",
+      "type": "Mammal",
+      "description": "softy mcknivesforhands"
+    }
+  },
+  {
+    "model": "animals.animal",
+    "pk": 2,
+    "fields": {
+      "name": "Dog",
+      "type": "Mammal",
+      "description": "good boi"
+    }
+  },
+  {
+    "model": "animals.animal",
+    "pk": 3,
+    "fields": {
+      "name": "frog",
+      "type": "amphibian",
+      "description": "hippity hoppity"
+    }
+  },
+  {
+    "model": "animals.animal",
+    "pk": 4,
+    "fields": {
+      "name": "Great White shark",
+      "type": "fish",
+      "description": "da dun... da dun... dadundadundadun etc"
+    }
+  },
+  {
+    "model": "animals.animal",
+    "pk": 10,
+    "fields": {
+      "name": "Pig",
+      "type": "mammal",
+      "description": "oink"
+    }
+  }
+]

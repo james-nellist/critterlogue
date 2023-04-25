@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4ae63539.css",
+    "main.js": "/static/js/main.de2270ed.js",
+    "static/media/leaf-pattern-design-leaves-wallpaper-preview.jpeg": "/static/media/leaf-pattern-design-leaves-wallpaper-preview.7d583761f8b5bba5cfef.jpeg",
+    "index.html": "/index.html",
+    "main.4ae63539.css.map": "/static/css/main.4ae63539.css.map",
+    "main.de2270ed.js.map": "/static/js/main.de2270ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ae63539.css",
+    "static/js/main.de2270ed.js"
+  ]
+}

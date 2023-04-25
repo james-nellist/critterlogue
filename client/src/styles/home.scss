@@ -1,0 +1,163 @@
+@import './global/variables.scss';
+$hexagon-width: 250px;
+$hexagon-height: $hexagon-width*.55;
+$hexagon-margin: 25px;
+$hexagon-title-color: #fff;
+$hexagon-border-color: #fff;
+$hexagon-border-color--hover: #72f88e;
+$hexagon-image-color: #3ea0eb;
+$honeycomb-max-width: 1200px;
+$viewport-thereshold: $hexagon-width + $hexagon-margin;
+
+a {
+  width: fit-content;
+}
+
+.homepage{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-between;
+  gap: 5px;
+  @media (min-width: 660px){
+    padding-top: 30px;
+  }
+  
+
+  .animal-card{
+    :hover{
+      font-size: 15px;
+    }
+    border-radius: 3px;
+    width: fit-content;
+    font-size: $text;
+    background-color: rgba(0,0,0,0.5);
+    .name{
+      font-size: 125%;
+      text-decoration: underline;
+      margin: 0 0 5px 0;
+    }
+  }
+
+  .animal-card:hover {
+    animation: 30px;
+  }
+
+  .profile-picture{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(177, 174, 174);
+    margin: 0 10px 0 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .animal-image{
+    width: 100vw;
+    height: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .thing{
+    padding: 0 10px;
+    max-height: 70px;
+    overflow: scroll;
+    margin: 10px 0 0;
+  }
+  
+  .username {
+    padding: 10px 0;
+  }
+
+  .caption{
+    padding: 5px 0;
+    height: 45px;
+  }
+
+  .username{
+    font-weight: bold;
+    margin-right: 10px;
+    @include flex-center();
+    justify-content: flex-start;
+  }
+
+  .caption{
+    overflow: hidden;
+  }
+
+  .home-comments{
+    @include flex-center();
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: $text;
+    margin: 0 10px 15px;
+    height: 70px;
+    overflow: hidden;
+    .home-comments-username{
+      display: flex;
+      width: 100%;
+    }
+    .home-comments-left{
+      font-weight: bold;
+    }
+    .comments-container{
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 5px;
+      .profile-picture{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+      }
+      div {
+        &:first-child{
+          font-weight: 500;
+        }
+      }
+      .home-comments-margin{
+        display: flex;
+        flex-direction: column;
+        margin-left: 35px;
+        margin-top: -5px;
+        .text{
+          margin-right: 5px;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .spinner{
+    position: fixed;
+    top: 50%;
+    width: 40vw;
+    left: 30vw;
+    // translate: (-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 660px){
+  .homepage{
+    width: 90vw;
+    max-width: 930px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    .animal-image{
+      width: 30vw;
+      max-width: 300px;
+      height: 30vw;
+      max-height: 300px;
+    }
+    .username, .caption{
+      max-width: 300px;
+    }
+  }
+}

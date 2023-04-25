@@ -1,0 +1,47 @@
+[
+  {
+    "model": "sightings.sighting",
+    "pk": 1,
+    "fields": {
+      "animal": 2,
+      "date_sighted": "2023-04-18T11:44:49.647Z",
+      "notes": "theres a dog in my house"
+    }
+  },
+  {
+    "model": "sightings.sighting",
+    "pk": 2,
+    "fields": {
+      "animal": 1,
+      "date_sighted": "2023-04-18T11:45:18.034Z",
+      "notes": "theres a cat next to me at the moment"
+    }
+  },
+  {
+    "model": "sightings.sighting",
+    "pk": 3,
+    "fields": {
+      "animal": 3,
+      "date_sighted": "2023-04-18T14:50:19.374Z",
+      "notes": "one tried to get in my house once"
+    }
+  },
+  {
+    "model": "sightings.sighting",
+    "pk": 7,
+    "fields": {
+      "animal": 1,
+      "date_sighted": "2023-04-18T21:28:57.427Z",
+      "notes": "1"
+    }
+  },
+  {
+    "model": "sightings.sighting",
+    "pk": 8,
+    "fields": {
+      "animal": 2,
+      "date_sighted": "2023-04-18T21:29:59.005Z",
+      "notes": "1"
+    }
+  }
+]
